@@ -1,0 +1,26 @@
+environment:
+  JAVA_HOME: C:\Program Files\Java\jdk1.8.0
+
+install:
+  - set PATH=%JAVA_HOME%\bin;%PATH%
+
+cache:
+  - C:\Users\appveyor\.m2\ -> pom.xml
+
+build_script:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V  # This is what Travis CI does by default.
+
+test_script:
+  - mvn test -B  # This is what Travis CI does by default.
+
+after_test:
+  - ps: |
+      $url = "https://ci.appveyor.com/api/testresults/junit/$($env:APPVEYOR_JOB_ID)"
+      $files = Get-ChildItem '.\target\surefire-reports\junitreports\TEST-*.xml'
+      ForEach ($file in $files) {
+          (New-Object 'System.Net.WebClient').UploadFile($url, (Resolve-Path $file))
+      }
+
+artifacts:
+  - path: target\*.jar
+    name: Java archive
