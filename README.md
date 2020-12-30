@@ -18,8 +18,6 @@ Java implementation of the [Gerrit Code Review Tool] REST API.
 
 Only Gerrit 2.6 or newer is supported (missing / incomplete REST API in older versions).
 
-This implementation is used as base for the [Gerrit IntelliJ Plugin].
-
 Many different authentication-methods are supported (HTTP basic, HTTP digest, LDAP with form,
 HTTP password from Gerrit setting, ...).
 
