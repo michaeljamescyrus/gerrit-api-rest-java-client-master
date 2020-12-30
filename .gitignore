@@ -1,0 +1,18 @@
+# this file contains test-hosts and eventually credentials
+src/test/resources/com/michaeljamescyrus/gerrit/client/rest/testhosts.json
+
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# OS X
+.DS_Store
