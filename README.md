@@ -1,16 +1,6 @@
 # gerrit-api-rest-java-client-master
 Java implementation of the Gerrit Code Review Tool REST API Client
 
-gerrit-api-rest-java-client
-======================
-
-[![Linux Build](https://travis-ci.org/michaeljamescyrus/gerrit-rest-java-client.svg?branch=master)](https://travis-ci.org/michaeljamescyrus/gerrit-rest-java-client)
-[![Windows Build](https://ci.appveyor.com/api/projects/status/ctm64o74lxdri26s/branch/master?svg=true)](https://ci.appveyor.com/project/michaeljamescyrus/gerrit-rest-java-client/branch/master)
-[![Coverage Status](https://img.shields.io/coveralls/michaeljamescyrus/gerrit-rest-java-client.svg)](https://coveralls.io/r/michaeljamescyrus/gerrit-rest-java-client)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.michaeljamescyrus.gerrit.client.rest%3Agerrit-rest-java-client&metric=alert_status)](https://sonarcloud.io/dashboard/index/com.michaeljamescyrus.gerrit.client.rest:gerrit-rest-java-client)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=com.michaeljamescyrus.gerrit.client.rest%3Agerrit-rest-java-client&metric=sqale_rating)](https://sonarcloud.io/dashboard/index/com.michaeljamescyrus.gerrit.client.rest:gerrit-rest-java-client)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.michaeljamescyrus.gerrit.client.rest/gerrit-rest-java-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.michaeljamescyrus.gerrit.client.rest/gerrit-rest-java-client)
-
 Introduction
 -----------
 
